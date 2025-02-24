@@ -1,0 +1,63 @@
+.studios-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/OurStudios.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Creates opacity effect */
+  background-blend-mode: darken; /* Darkens the background */
+}
+
+.heading {
+  display: flex;
+  gap: 20px; 
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Apply Animation to Each Word */
+.word {
+  opacity: 0; /* Initially Hidden */
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fadeInWord 1s ease-in-out forwards;
+}
+
+/* Keyframes for Word-wise Fade-in */
+@keyframes fadeInWord {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay for Each Word */
+.word:nth-child(1) {
+  animation-delay: 0.2s;
+} /* Your */
+.word:nth-child(2) {
+  animation-delay: 0.7s;
+} /* Stay, */
+.word:nth-child(3) {
+  animation-delay: 1.2s;
+} /* Your */
+.word:nth-child(4) {
+  animation-delay: 1.4s;
+} /* Choice */
+
+.studios-container {
+  padding-bottom: 50px; /* Adds space between hero and listings */
+}
+
+.listings-section {
+  margin-top: 50px; /* Adjust as needed */
+}

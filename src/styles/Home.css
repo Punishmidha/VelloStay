@@ -1,0 +1,89 @@
+/* Remove horizontal scrollbar properly */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Ensure full-width sections */
+  .home-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  /* Move Welcome to Vello Stay up */
+  .hero-section h1 {
+    position: relative;
+    top: -150px; /* Move text up */
+  }
+  
+  /* Background overlay */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none; /* Allow clicks through overlay */
+  }
+  
+  /* Ensure elements appear above overlay */
+  .hero-section h1,
+  .hero-section p,
+  .hero-section .btn,
+  .animated-image {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .animated-image {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  
+  
+
+  

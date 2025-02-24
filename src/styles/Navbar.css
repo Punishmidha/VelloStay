@@ -1,0 +1,27 @@
+.navbar {
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it's above other elements */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  gap: 15px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #f8d210 !important; /* Changes color on hover */
+}
