@@ -69,9 +69,9 @@ const Home = () => {
         </p>
       </div>
 
-      <Room1 />
-      <Room2 />
-      <Room3 />
+      <Room1 reverse={false} />
+      <Room2 reverse={true} />
+      <Room3 reverse={false} />
     </div>
   );
 };

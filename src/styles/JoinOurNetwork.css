@@ -1,0 +1,22 @@
+.join-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.join-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+
+.globe-wrapper {
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+}
