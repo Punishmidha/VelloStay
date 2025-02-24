@@ -4,13 +4,13 @@ import "../styles/About.css";
 import "../styles/Rooms.css";
 import { motion } from "framer-motion";
 import homeBg from "../assets/HomeHotel.jpg";
-import Room1 from "./Rooms/Room1";
-import Room2 from "./Rooms/Room2";
-import Room3 from "./Rooms/Room3";
+import Room1 from "./Rooms/Room1.jsx";
+import Room2 from "./Rooms/Room2.jsx";
+import Room3 from "./Rooms/Room3.jsx";
 
 const Home = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
 
   // Scroll Animation Effect
