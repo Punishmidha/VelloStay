@@ -35,9 +35,10 @@ const Room1 = () => {
           animate={inView1 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 1 }}
         >
-          <h3>✨ Luxury Comfort</h3>
+          <h3>🛏️ Ultimate Comfort & Soft Bedding</h3>
           <p>
-            Enjoy premium beds, elegant interiors, and world-class amenities.
+            Sink into a plush, ultra-soft bed designed for a peaceful and
+            refreshing sleep.
           </p>
         </motion.div>
 
@@ -48,8 +49,11 @@ const Room1 = () => {
           animate={inView2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <h3>📶 Free Wi-Fi</h3>
-          <p>Stay connected with high-speed internet in all rooms.</p>
+          <h3>📺 Immersive Entertainment Experience</h3>
+          <p>
+            Enjoy your favorite movies and shows on a high-definition TV with
+            seamless streaming and premium channels.
+          </p>
         </motion.div>
 
         <motion.div
@@ -59,14 +63,15 @@ const Room1 = () => {
           animate={inView3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <h3>🍽️ 24/7 Room Service</h3>
-          <p>Order delicious meals anytime from our in-house restaurant.</p>
+          <h3>📶 High-Speed Wi-Fi 24/7</h3>
+          <p>
+            Stay connected with lightning-fast, uninterrupted internet access
+            anytime, anywhere.
+          </p>
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default Room1; 
-
-
+export default Room1;

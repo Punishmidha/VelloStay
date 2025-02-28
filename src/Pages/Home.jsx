@@ -7,6 +7,7 @@ import homeBg from "../assets/HomeHotel.jpg";
 import Room1 from "./Rooms/Room1.jsx";
 import Room2 from "./Rooms/Room2.jsx";
 import Room3 from "./Rooms/Room3.jsx";
+import Room4 from "./Rooms/Room4.jsx";
 
 const Home = () => {
   useEffect(() => {
@@ -56,7 +57,6 @@ const Home = () => {
           <h1>Welcome to Vello Stay</h1>
         </motion.div>
       </div>
-
       {/* About Us Section */}
       <div className="about-us">
         <h2 className="fade-in">About Vello Stay</h2>
@@ -68,10 +68,13 @@ const Home = () => {
           unforgettable.
         </p>
       </div>
-
       <Room1 reverse={false} />
+      <hr className="room-divider" />
       <Room2 reverse={true} />
+      <hr className="room-divider" />
       <Room3 reverse={false} />
+      <hr className="room-divider" />
+      <Room4 reverse={true} />
     </div>
   );
 };

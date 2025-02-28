@@ -1,7 +1,7 @@
 import "../../styles/Rooms.css"; // Updated path
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import roomImg from "../../assets/room1.jpg"; // Updated path
+import roomImg from "../../assets/room3.jpg"; // Updated path
 
 const Room1 = () => {
   // ✅ Fixed component name
@@ -35,9 +35,10 @@ const Room1 = () => {
           animate={inView1 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 1 }}
         >
-          <h3>✨ Luxury Comfort</h3>
+          <h3>🛋️ Plush & Comfortable Seating</h3>
           <p>
-            Enjoy premium beds, elegant interiors, and world-class amenities.
+            Sink into luxurious sofas designed for ultimate relaxation and
+            style.
           </p>
         </motion.div>
 
@@ -48,8 +49,11 @@ const Room1 = () => {
           animate={inView2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <h3>📶 Free Wi-Fi</h3>
-          <p>Stay connected with high-speed internet in all rooms.</p>
+          <h3>📺 Perfect Lounge Area</h3>
+          <p>
+            Enjoy your favorite shows with a cozy seating space & entertainment
+            setup.
+          </p>
         </motion.div>
 
         <motion.div
@@ -59,14 +63,15 @@ const Room1 = () => {
           animate={inView3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <h3>🍽️ 24/7 Room Service</h3>
-          <p>Order delicious meals anytime from our in-house restaurant.</p>
+          <h3>☕ Relax & Unwind</h3>
+          <p>
+            Sip your coffee while enjoying a warm and inviting ambiance in the
+            sofa lounge.
+          </p>
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default Room1; 
-
-
+export default Room1;

@@ -1,88 +1,97 @@
 .listings-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.listing-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.listing-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.listing-card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.listing-card p {
+  color: #777;
+  font-size: 14px;
+}
+
+.listing-card:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .listings-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .listing-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 50px;
-    transition: transform 0.3s ease-in-out;
-    position: relative;
+}
+
+@media (max-width: 600px) {
+  .listings-container {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .listing-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .listing-card h3 {
-    margin: 10px 0 5px;
-    color: #333;
-  }
-  
-  .listing-card p {
-    color: #777;
-    font-size: 14px;
-  }
-  
-  .listing-card:hover {
-    transform: scale(1.05);
-  }
-  
-  @media (max-width: 900px) {
-    .listings-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .listings-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  
-  .like-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-  }
-  
+}
+
+.like-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.like-btn:hover {
+  background: none;
+}
+
   .like-btn.liked {
     color: red;
   }
+
   
-  .visit-btn {
-    display: block;
-    margin: 10px auto;
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  
-  .visit-btn:hover {
-    background: #0056b3;
-  }
+
+.visit-btn {
+  display: block;
+  margin: 10px auto;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.visit-btn:hover {
+  background: #0056b3;
+}

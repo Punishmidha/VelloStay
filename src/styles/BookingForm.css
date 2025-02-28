@@ -1,0 +1,137 @@
+/* Heading */
+/* Main container */
+.booking-form-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20vh 35vh; /* Adjusted margin for centering */
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Ensures proper centering */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    gap: 20px;
+  }
+
+  
+  
+  .FN {
+    background-color: rgb(250, 246, 246); 
+    color: black;
+    
+}
+
+/* Ensures the default calendar icon remains visible */
+.FN[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);  /* Makes the icon visible on light backgrounds */
+    opacity: 1;         /* Ensures the icon is visible */
+    width: 20px;        /* Adjust size */
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+/* Left side - Image */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.listing-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.listing-image:hover {
+  transform: scale(1.02);
+}
+
+/* Location text below image */
+.location-text {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+}
+
+/* Right side - Form */
+.form-container {
+  width: 55%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Form Fields */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button */
+button:hover {
+  background: linear-gradient(to right, #0056b3, #004499);
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .booking-form-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+    margin: 60px auto;
+    margin: 20vh 15vh;
+    padding: 20px;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .listing-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .location-text {
+    font-size: 16px;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 20px;
+  }
+}

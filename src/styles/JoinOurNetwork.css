@@ -5,18 +5,88 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: rgb(8, 22, 29);
   color: white;
   text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
+
 
 .join-heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Globe Styling */
+.globe-wrapper {
+  width: 100%;
+  max-width: 400px;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.globe-wrapper {
-  width: 400px; /* Adjust as needed */
-  height: 400px; /* Adjust as needed */
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: white;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #ff5a5f;
+}
+
+/* Make images (icons) responsive */
+.booking-logo {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.booking-logo:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .join-heading {
+    font-size: 2rem;
+  }
+
+  .globe-wrapper {
+    width: 80%;
+    height: auto;
+  }
+
+  .social-icon {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .join-heading {
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-icon {
+    font-size: 22px;
+  }
 }

@@ -5,7 +5,8 @@ import img3 from "../assets/ListingPics/delhi.jpg";
 import img4 from "../assets/ListingPics/chandigarh.jpg";
 import img5 from "../assets/ListingPics/banglore.jpg";
 import img6 from "../assets/ListingPics/mumbai.jpg";
-import { useState } from "react"; // To handle like button state
+import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const listings = [
   { id: 1, city: "Noida", area: "SuperNova Noida", img: img1 },
@@ -18,26 +19,34 @@ const listings = [
 
 const Listings = () => {
   const [liked, setLiked] = useState({});
+  const navigate = useNavigate(); // Hook for navigation
 
   const toggleLike = (id) => {
     setLiked((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
+  // Function to navigate to the booking page
+  const openBookingForm = (listing) => {
+    navigate(`/book?city=${listing.city}&area=${listing.area}`);
+  };
+
   return (
     <div className="listings-container">
-      {listings.map(({ id, city, area, img }) => (
-        <div key={id} className="listing-card">
-          <img src={img} alt={city} />
-          <h3>{city}</h3>
-          <p>{area}</p>
+      {listings.map((listing) => (
+        <div key={listing.id} className="listing-card">
+          <img src={listing.img} alt={listing.city} />
+          <h3>{listing.city}</h3>
+          <p>{listing.area}</p>
           <div className="buttons">
             <button
-              className={`like-btn ${liked[id] ? "liked" : ""}`}
-              onClick={() => toggleLike(id)}
+              className={`like-btn ${liked[listing.id] ? "liked" : ""}`}
+              onClick={() => toggleLike(listing.id)}
             >
-              {liked[id] ? "❤️" : "🤍"}
+              {liked[listing.id] ? "❤️" : "🤍"}
             </button>
-            <button className="visit-btn">🔗 Visit</button>
+            <button className="visit-btn" onClick={() => openBookingForm(listing)}>
+              🔗 Book Now
+            </button>
           </div>
         </div>
       ))}
