@@ -1,11 +1,10 @@
-import "../../styles/Rooms.css"; // Updated path
+import "../../styles/Rooms.css"; 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import roomImg from "../../assets/room3.jpg"; // Updated path
+import roomImg from "../../assets/room3.jpg"; 
 
 const Room1 = () => {
-  // ✅ Fixed component name
-  // Hook to track when elements are in view
+  
   const { ref: ref1, inView: inView1 } = useInView({
     triggerOnce: false,
     threshold: 0.2,
@@ -21,12 +20,10 @@ const Room1 = () => {
 
   return (
     <div className="rooms-container">
-      {/* Left Section - Room Image */}
       <div className="room-image">
         <img src={roomImg} alt="Room" />
       </div>
 
-      {/* Right Section - Room Details */}
       <div className="room-details">
         <motion.div
           ref={ref1}

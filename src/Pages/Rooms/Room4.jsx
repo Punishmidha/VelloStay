@@ -19,12 +19,10 @@ const Room2 = ({ reverse }) => {
 
   return (
     <div className={`rooms-container ${reverse ? "rooms-reverse" : ""}`}>
-      {/* Room Image */}
       <div className="room-image">
         <img src={roomImg} alt="Room" />
       </div>
 
-      {/* Room Details */}
       <div className="room-details">
         <motion.div
           ref={ref1}

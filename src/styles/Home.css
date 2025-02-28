@@ -1,4 +1,3 @@
-/* Remove horizontal scrollbar properly */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +10,6 @@ html {
   width: 100%;
 }
 
-/* Ensure full-width sections */
 .home-container {
   width: 100vw;
   height: 100vh;
@@ -38,7 +36,6 @@ html {
   position: relative;
 }
 
-/* Move Welcome to Vello Stay up */
 .hero-section h1 {
   position: relative;
   top: -150px; /* Move text up */
@@ -54,10 +51,9 @@ html {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  pointer-events: none; /* Allow clicks through overlay */
+  pointer-events: none;
 }
 
-/* Ensure elements appear above overlay */
 .hero-section h1,
 .hero-section p,
 .hero-section .btn,

@@ -5,7 +5,6 @@ const ContactUs = () => {
     <div className="contact-container">
       <h2 className="contact-heading">Contact Us</h2>
 
-      {/* Host Info */}
       <div className="host-info">
         <p>
           <strong>Host Name:</strong> Rahul Midha
@@ -15,7 +14,6 @@ const ContactUs = () => {
         </p>
       </div>
 
-      {/* Contact Form */}
       <form className="contact-form">
         <label>Your Name</label>
         <input type="text" placeholder="Enter your name" required />

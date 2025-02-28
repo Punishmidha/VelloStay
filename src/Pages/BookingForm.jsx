@@ -25,7 +25,6 @@ const BookingForm = () => {
   return (
     <div>
       <div className="booking-form-container">
-        {/* Left Side - Image */}
         <div className="image-container">
           <h2 className="bookHead">Book Your Stay</h2>
           <img src={imgSrc} alt={city} className="listing-image" />
@@ -34,7 +33,6 @@ const BookingForm = () => {
           </p>
         </div>
 
-        {/* Right Side - Form */}
         <div className="form-container">
           <form>
             <label>Your Name</label>

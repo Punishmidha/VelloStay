@@ -14,7 +14,6 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Scroll Animation Effect
   useEffect(() => {
     const fadeElements = document.querySelectorAll(".fade-in");
 
@@ -33,7 +32,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Section */}
       <div className="home-container">
         <motion.div
           className="hero-section"
@@ -57,7 +55,6 @@ const Home = () => {
           <h1>Welcome to Vello Stay</h1>
         </motion.div>
       </div>
-      {/* About Us Section */}
       <div className="about-us">
         <h2 className="fade-in">About Vello Stay</h2>
         <p className="fade-in">

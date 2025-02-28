@@ -5,12 +5,11 @@ import studioBg from "../assets/OurStudios.jpg";
 
 const OurStudios = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top when component mounts
+    window.scrollTo(0, 0); 
   }, []);
 
   return (
     <div>
-      {/* Hero Section */}
       <div
         className="studios-container"
         style={{ backgroundImage: `url(${studioBg})` }}
@@ -23,7 +22,6 @@ const OurStudios = () => {
         </h1>
       </div>
 
-      {/* Listings Section */}
       <div className="listings-section">
         <Listings />
       </div>

@@ -6,7 +6,7 @@ import img4 from "../assets/ListingPics/chandigarh.jpg";
 import img5 from "../assets/ListingPics/banglore.jpg";
 import img6 from "../assets/ListingPics/mumbai.jpg";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 
 const listings = [
   { id: 1, city: "Noida", area: "SuperNova Noida", img: img1 },
@@ -19,13 +19,12 @@ const listings = [
 
 const Listings = () => {
   const [liked, setLiked] = useState({});
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate(); 
 
   const toggleLike = (id) => {
     setLiked((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
-  // Function to navigate to the booking page
   const openBookingForm = (listing) => {
     navigate(`/book?city=${listing.city}&area=${listing.area}`);
   };

@@ -1,13 +1,12 @@
 import React from "react";
 import "../styles/Support.css";
-import supportImage from "../assets/support.jpg"; // Importing the image
+import supportImage from "../assets/support.jpg"; 
 
 export default function SupportCenter() {
   return (
     <div className="support-wrapper">
       <div className="support-left">
         <img src={supportImage} alt="Support" className="support-image" />{" "}
-        {/* Using imported image */}
       </div>
       <div className="support-right">
         <h1 className="support-title">Support Center</h1>
@@ -24,7 +23,6 @@ export default function SupportCenter() {
         </a>
         <br />
 
-        {/* Contact Section */}
         <div className="support-contact">
           <p>
             📞 Call us: <a href="tel:+9996850506">+91 9996850506</a>
